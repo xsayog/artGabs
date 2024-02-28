@@ -1,1 +1,47 @@
+Escopo de Projeto - Finanças
+Tecnologias: HTML, CSS, JavaScript, Java, MySQL, Spring Boot
 
+História:
+A consultoria financeira busca uma página web para facilitar o gerenciamento de despesas e receitas de seus clientes. 
+A interface permitirá aos usuários realizar operações básicas, como adicionar, visualizar, editar e excluir transações, além de possibilitar categorização e busca por período.
+
+Requisitos:
+1. Página Principal:
+   - Uma página web para gerenciamento de receitas e despesas.
+
+2. Operações CRUD:
+   - **Create (Criação): Adição de novas receitas e despesas com campos como descrição, valor, data e categoria.
+   - **Read (Leitura): Exibição da lista de transações cadastradas, com capacidade de ordenação por data ou valor.
+   - **Update (Atualização): Edição das informações das transações existentes.
+   - **Delete (Exclusão): Remoção de transações registradas.
+
+3. Categorização de Despesas:
+   - Possibilidade de categorizar receitas (ex: salário, comissão, vendas, etc.).
+
+
+Fiquei com front-end, porém tive a oportunidade de gerenciar o Back-end, com a minha dupla. 
+link apresentação: https://drive.google.com/file/d/1Mktngo-ufknpNWU1p67pCVoleyQrzaPs/view?usp=sharing
+
+
+
+_______________________________________________________________________________________________________
+
+
+Agradeço a todos que contribuíram para minha jornada em Java Full Stack na SoulCode Academy. 
+A Universia Brasil por patrocinar esse bootcamp, aos fundadores, conselheiros, mentores, professores, colegas, familiares e equipe. 
+Este bootcamp não foi só sobre código, mas criar um ambiente onde cada voz importa.
+Grata por terem me escolhido como oradora de turma; superar o receio de falar em público para estranhos também foi uma grande conquista. 
+
+
+“Como alguém no espectro autista, aprendi muito com meus colegas PCDs. Pois antes eu não tinha a real ideia das diferentes experiências 
+que outras pessoas viviam, mas percebi que, apesar das dificuldades únicas de cada um, compartilhamos a vontade de superá-las. 
+Isso me acolheu de forma incrível, e acredito que meus colegas sentiram o mesmo. Não se trata apenas de sobreviver, 
+mas de viver com qualidade. Ninguém é mais ou menos importante; e é o mundo que deve se adaptar para incluir a todos, não o contrário. 
+Esse bootcamp foi sobre compreender, respeitar e apoiar uns aos outros. E também possibilitou conhecermos pessoas incríveis que estão lidando com suas batalhas diárias, mostrando como a acessibilidade, respeito, e compreensão é vital para todos.
+Acredito que somente algumas coisas que passamos podem nos levar até determinados lugares. Não sei em que lugar você está agora - 
+se este lugar te inspira ou se esse lugar tira as suas esperanças. O que eu quero que você saiba, é que você se sairá melhor disso. 
+Mesmo que pareça que não há nada para extrair deste lugar, nem mesmo um aprendizado, espero que você compreenda que esse lugar te revela o que não deve aceitar, onde não permanecer e para onde não voltar.”
+
+
+
+🔗 script completo do discurso como oradora: https://lnkd.in/dGq_9uRP [escrito/editado por gabriela moreira]

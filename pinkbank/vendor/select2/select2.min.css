@@ -1,0 +1,92 @@
+/* Estilos para o Select2 */
+
+/* Container principal */
+.select2-container {
+  box-sizing: border-box;
+  display: inline-block;
+  margin: 0;
+  position: relative;
+  vertical-align: middle;
+}
+
+/* Estilos para seleção simples */
+.select2-container .select2-selection--single {
+  box-sizing: border-box;
+  cursor: pointer;
+  display: block;
+  height: 28px;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Estilos para dropdown quando está aberto */
+.select2-container--classic.select2-container--open
+  .select2-dropdown--below
+  .select2-selection--multiple {
+  border-bottom: none;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+/* Estilos para campo de busca dentro do dropdown */
+.select2-container--classic .select2-search--dropdown .select2-search__field {
+  border: 1px solid #aaa;
+  outline: 0;
+}
+
+/* Estilos para campo de busca inline */
+.select2-container--classic .select2-search--inline .select2-search__field {
+  outline: 0;
+  box-shadow: none;
+}
+
+/* Estilos para o dropdown */
+.select2-container--classic .select2-dropdown {
+  background-color: #fff;
+  border: 1px solid transparent;
+}
+
+/* Estilos para dropdown acima do campo */
+.select2-container--classic .select2-dropdown--above {
+  border-bottom: none;
+}
+
+/* Estilos para dropdown abaixo do campo */
+.select2-container--classic .select2-dropdown--below {
+  border-top: none;
+}
+
+/* Estilos para as opções nos resultados */
+.select2-container--classic .select2-results > .select2-results__options {
+  max-height: 200px;
+  overflow-y: auto;
+}
+
+/* Estilos para opções de grupo */
+.select2-container--classic .select2-results__option[role="group"] {
+  padding: 0;
+}
+
+/* Estilos para opções desabilitadas */
+.select2-container--classic .select2-results__option[aria-disabled="true"] {
+  color: grey;
+}
+
+/* Estilos para opção destacada */
+.select2-container--classic
+  .select2-results__option--highlighted[aria-selected] {
+  background-color: #3875d7;
+  color: #fff;
+}
+
+/* Estilos para grupo de resultados */
+.select2-container--classic .select2-results__group {
+  cursor: default;
+  display: block;
+  padding: 6px;
+}
+
+/* Estilos para dropdown aberto */
+.select2-container--classic.select2-container--open .select2-dropdown {
+  border-color: #5897fb;
+}

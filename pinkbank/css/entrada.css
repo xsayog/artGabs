@@ -1,0 +1,156 @@
+/* styles.css */
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 20px;
+  background-color: #ffcccc; /* Cor de fundo rosa */
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+  margin-right: 2%;
+  margin-left: 2%;
+}
+
+.form-container,
+.entry-list {
+  width: 48%;
+  background-color: white;
+  padding: 20px;
+  border-radius: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin-top: 20px;
+}
+
+form {
+  max-width: 100%;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="number"],
+textarea {
+  width: calc(100% - 20px);
+  padding: 8px;
+  margin-bottom: 10px;
+  border-radius: 20px;
+  border: 1px solid #ccc;
+  transition: border-color 0.3s ease;
+}
+
+input[type="submit"].round-btn,
+.delete-btn.round-btn {
+  padding: 8px 20px;
+  background-color: #e91e63; /* Cor rosa mais forte */
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 20px;
+  transition: background-color 0.3s ease;
+}
+
+input[type="submit"].round-btn:hover,
+.delete-btn.round-btn:hover {
+  background-color: #ff5cac; /* Cor rosa mais escura ao passar o mouse */
+}
+
+input[type="submit"].round-btn:active,
+.delete-btn.round-btn:active {
+  background-color: #e91e63; /* Cor rosa mais escura ao clicar */
+}
+
+.entry-list {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  margin-top: 20px; /* Espaço entre a entrada de dinheiro e a lista */
+}
+
+.form-container,
+.entry-list {
+  width: 48%;
+  background-color: white;
+  padding: 20px;
+  border-radius: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin-top: 20px;
+  margin-right: 2%; /* Espaço entre as colunas */
+  margin-left: 2%;
+  font-size: medium;
+}
+
+form {
+  max-width: 100%;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="number"],
+textarea,
+select {
+  width: calc(100% - 20px);
+  padding: 8px;
+  margin-bottom: 10px;
+  border-radius: 20px;
+  border: 1px solid #ccc;
+  transition: border-color 0.3s ease;
+}
+
+.entry-table {
+  width: 100%;
+  margin-top: 20px; /* Espaço entre a lista e o total */
+  margin-bottom: 20px;
+}
+
+.entry {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 16px;
+  border-radius: 20px;
+  border: 1px solid #ccc;
+  margin-bottom: 10px;
+}
+
+.entry-amount {
+  margin-left: auto;
+  margin-right: 10px;
+}
+
+.delete-btn {
+  padding: 8px;
+  background-color: #e91e63;
+  color: white;
+  border: none;
+  border-radius: 20px; /* Borda arredondada */
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.delete-btn:hover {
+  background-color: #cc0000;
+}
+
+.total-entry {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  font-weight: bold;
+  border-top: 10px solid #ccc;
+  padding-top: 10px;
+}
+
+.total-label {
+  margin-right: 10px;
+}

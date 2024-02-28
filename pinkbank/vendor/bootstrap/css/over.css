@@ -1,0 +1,1277 @@
+/* Remove sombras */
+*,
+*::before,
+*::after {
+  text-shadow: none !important;
+  box-shadow: none !important;
+}
+
+/* Estiliza links */
+a,
+a:visited {
+  text-decoration: underline;
+}
+
+/* Adiciona título abreviado */
+abbr[title]::after {
+  content: " (" attr(title) ")";
+}
+
+/* Manipulação de elementos pré-formatados */
+pre {
+  white-space: pre-wrap !important;
+}
+
+/* Estiliza elementos pre e blockquote */
+pre,
+blockquote {
+  border: 1px solid #999;
+  page-break-inside: avoid;
+}
+
+/* Define cabeçalhos de tabela */
+thead {
+  display: table-header-group;
+}
+
+/* Evita quebras de página */
+tr,
+img {
+  page-break-inside: avoid;
+}
+
+/* Controla órfãos e viúvas de parágrafos, h2 e h3 */
+p,
+h2,
+h3 {
+  orphans: 3;
+  widows: 3;
+}
+
+/* Evita quebras de página após h2 e h3 */
+h2,
+h3 {
+  page-break-after: avoid;
+}
+
+/* Esconde a classe .navbar */
+.navbar {
+  display: none;
+}
+
+/* Estiliza a classe .badge */
+.badge {
+  border: 1px solid #000;
+}
+
+/* Manipulação de tabelas */
+.table {
+  border-collapse: collapse !important;
+}
+
+/* Estiliza células de tabela */
+.table td,
+.table th {
+  background-color: #fff !important;
+}
+
+/* Estiliza bordas de tabela */
+.table-bordered th,
+.table-bordered td {
+  border: 1px solid #ddd !important;
+}
+
+
+/* Definições gerais para o HTML */
+html {
+  box-sizing: border-box;
+  font-family: sans-serif;
+  line-height: 1.15;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  -ms-overflow-style: scrollbar;
+  -webkit-tap-highlight-color: transparent;
+}
+
+/* Herda o box-sizing */
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+/* Configurações para diferentes elementos */
+@-ms-viewport {
+  width: device-width;
+}
+
+/* Reset de estilos para alguns elementos */
+article,
+aside,
+dialog,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+nav,
+section {
+  display: block;
+}
+
+/* Estilos para o corpo do documento */
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  font-size: 1rem;
+  font-weight: normal;
+  line-height: 1.5;
+  color: #212529;
+  background-color: #fff;
+}
+
+/* Estilos para foco em elementos específicos */
+[tabindex="-1"]:focus {
+  outline: none !important;
+}
+
+/* Estilos para linhas horizontais */
+hr {
+  box-sizing: content-box;
+  height: 0;
+  overflow: visible;
+}
+
+/* Estilos para cabeçalhos */
+h1, h2, h3, h4, h5, h6 {
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+}
+
+/* Estilos para parágrafos */
+p {
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+
+/* Estilos para elementos de link */
+a {
+  color: #007bff;
+  text-decoration: none;
+  background-color: transparent;
+  -webkit-text-decoration-skip: objects;
+}
+
+/* Estilos para hover em links */
+a:hover {
+  color: #0056b3;
+  text-decoration: underline;
+}
+
+/* Estilos para links sem referência */
+a:not([href]):not([tabindex]) {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* Estilos para foco e hover em links sem referência */
+a:not([href]):not([tabindex]):focus,
+a:not([href]):not([tabindex]):hover {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* Estilos para foco em links sem referência */
+a:not([href]):not([tabindex]):focus {
+  outline: 0;
+}
+
+/* Estilos para elementos pré-formatados */
+pre, code, kbd, samp {
+  font-family: monospace, monospace;
+  font-size: 1em;
+}
+
+/* Estilos para imagens */
+img {
+  vertical-align: middle;
+  border-style: none;
+}
+
+/* Estilos para elementos SVG */
+svg:not(:root) {
+  overflow: hidden;
+}
+
+/* Elementos interativos */
+a,
+area,
+button,
+[role="button"],
+input,
+label,
+select,
+summary,
+textarea {
+  -ms-touch-action: manipulation;
+  touch-action: manipulation;
+}
+
+/* Estilos de tabela */
+table {
+  border-collapse: collapse;
+}
+
+/* Estilos para legenda de tabela */
+caption {
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+  color: #868e96;
+  text-align: left;
+  caption-side: bottom;
+}
+
+/* Estilos para cabeçalho de tabela */
+th {
+  text-align: left;
+}
+
+/* Estilos para rótulos */
+label {
+  display: inline-block;
+  margin-bottom: 0.5rem;
+}
+
+/* Estilos para foco em botões */
+button:focus {
+  outline: 1px dotted;
+  outline: 5px auto -webkit-focus-ring-color;
+}
+
+/* Estilos para diversos elementos interativos */
+input,
+button,
+select,
+optgroup,
+textarea {
+  margin: 0;
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+}
+
+/* Estilos adicionais para botões e inputs */
+button,
+input {
+  overflow: visible;
+}
+
+/* Estilos para seletores */
+button,
+select {
+  text-transform: none;
+}
+
+/* Estilos específicos para botões */
+button,
+html [type="button"],
+[type="reset"],
+[type="submit"] {
+  -webkit-appearance: button;
+}
+
+/* Reset de estilos para foco interno em botões */
+button::-moz-focus-inner,
+[type="button"]::-moz-focus-inner,
+[type="reset"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner {
+  padding: 0;
+  border-style: none;
+}
+
+/* Estilos para inputs de radio e checkbox */
+input[type="radio"],
+input[type="checkbox"] {
+  box-sizing: border-box;
+  padding: 0;
+}
+
+/* Estilos para inputs de data, tempo, local e mês */
+input[type="date"],
+input[type="time"],
+input[type="datetime-local"],
+input[type="month"] {
+  -webkit-appearance: listbox;
+}
+
+/* Estilos para textarea */
+textarea {
+  overflow: auto;
+  resize: vertical;
+}
+
+/* Estilos para fieldset */
+fieldset {
+  min-width: 0;
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+/* Estilos para legend */
+legend {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  padding: 0;
+  margin-bottom: 0.5rem;
+  font-size: 1.5rem;
+  line-height: inherit;
+  color: inherit;
+  white-space: normal;
+}
+
+/* Estilos para progress */
+progress {
+  vertical-align: baseline;
+}
+
+/* Estilos para input number */
+[type="number"]::-webkit-inner-spin-button,
+[type="number"]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/* Estilos para input search */
+[type="search"] {
+  outline-offset: -2px;
+  -webkit-appearance: none;
+}
+
+/* Estilos para input search cancel button e decoration */
+[type="search"]::-webkit-search-cancel-button,
+[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/* Estilos para botão de upload de arquivo */
+::-webkit-file-upload-button {
+  font: inherit;
+  -webkit-appearance: button;
+}
+
+/* Estilos para output */
+output {
+  display: inline-block;
+}
+
+/* Estilos para summary */
+summary {
+  display: list-item;
+}
+
+/* Estilos para template */
+template {
+  display: none;
+}
+
+/* Estilos para elementos ocultos */
+[hidden] {
+  display: none !important;
+}
+
+/* Estilos para tamanhos de cabeçalhos e headings */
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+  margin-bottom: 0.5rem;
+  font-family: inherit;
+  font-weight: 500;
+  line-height: 1.1;
+  color: inherit;
+}
+
+/* Estilos para diferentes tamanhos de headings */
+h1, .h1 { font-size: 2.5rem; }
+h2, .h2 { font-size: 2rem; }
+h3, .h3 { font-size: 1.75rem; }
+h4, .h4 { font-size: 1.5rem; }
+h5, .h5 { font-size: 1.25rem; }
+h6, .h6 { font-size: 1rem; }
+
+/* Estilos para lead */
+.lead {
+  font-size: 1.25rem;
+  font-weight: 300;
+}
+
+/* Estilos para tamanhos de display */
+.display-1 { font-size: 6rem; }
+.display-2 { font-size: 5.5rem; }
+.display-3 { font-size: 4.5rem; }
+.display-4 { font-size: 3.5rem; }
+
+/* Estilos para hr */
+hr {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  border: 0;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+/* Estilos para texto small */
+small, .small {
+  font-size: 80%;
+  font-weight: normal;
+}
+
+/* Estilos para marcações */
+mark, .mark {
+  padding: 0.2em;
+  background-color: #fcf8e3;
+}
+
+/* Estilos para listas sem estilos */
+.list-unstyled {
+  padding-left: 0;
+  list-style: none;
+}
+
+/* Estilos para listas inline */
+.list-inline {
+  padding-left: 0;
+  list-style: none;
+}
+
+/* Estilos para itens de listas inline */
+.list-inline-item {
+  display: inline-block;
+}
+
+/* Estilos para itens de listas inline que não são o último */
+.list-inline-item:not(:last-child) {
+  margin-right: 5px;
+}
+
+/* Estilos para texto em caixa alta */
+.initialism {
+  font-size: 90%;
+  text-transform: uppercase;
+}
+
+/* Estilos para blockquote */
+.blockquote {
+  margin-bottom: 1rem;
+  font-size: 1.25rem;
+}
+
+/* Estilos para footer do blockquote */
+.blockquote-footer {
+  display: block;
+  font-size: 80%;
+  color: #868e96;
+}
+
+/* Estilos para conteúdo de blockquote footer */
+.blockquote-footer::before {
+  content: "\2014 \00A0";
+}
+
+/* Estilos para imagens fluidas */
+.img-fluid {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Estilos para imagens em miniatura */
+.img-thumbnail {
+  padding: 0.25rem;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 0.25rem;
+  transition: all 0.2s ease-in-out;
+  max-width: 100%;
+  height: auto;
+}
+
+/* Estilos para figuras */
+.figure {
+  display: inline-block;
+}
+
+/* Estilos para imagens dentro de figuras */
+.figure-img {
+  margin-bottom: 0.5rem;
+  line-height: 1;
+}
+
+/* Estilos para legendas de figuras */
+.figure-caption {
+  font-size: 90%;
+  color: #868e96;
+}
+
+/* Estilos para fontes monoespaçadas */
+code,
+kbd,
+pre,
+samp {
+  font-family: Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+}
+
+/* Estilos para blocos de código */
+code {
+  padding: 0.2rem 0.4rem;
+  font-size: 90%;
+  color: #bd4147;
+  background-color: #f8f9fa;
+  border-radius: 0.25rem;
+}
+
+/* Estilos para código dentro de links */
+a > code {
+  padding: 0;
+  color: inherit;
+  background-color: inherit;
+}
+
+/* Estilos para teclas */
+kbd {
+  padding: 0.2rem 0.4rem;
+  font-size: 90%;
+  color: #fff;
+  background-color: #212529;
+  border-radius: 0.2rem;
+}
+
+kbd kbd {
+  padding: 0;
+  font-size: 100%;
+  font-weight: bold;
+}
+
+/* Estilos para blocos de código pré-formatados */
+pre {
+  display: block;
+  margin-top: 0;
+  margin-bottom: 1rem;
+  font-size: 90%;
+  color: #212529;
+}
+
+/* Estilos para código dentro de blocos pré-formatados */
+pre code {
+  padding: 0;
+  font-size: inherit;
+  color: inherit;
+  background-color: transparent;
+  border-radius: 0;
+}
+
+/* Estilos para áreas pré-formatadas com rolagem */
+.pre-scrollable {
+  max-height: 340px;
+  overflow-y: scroll;
+}
+
+/* Estilos para containers */
+.container {
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 15px;
+  padding-left: 15px;
+  width: 100%;
+}
+
+/* Estilos responsivos para containers */
+@media (min-width: 576px) { .container { max-width: 540px; } }
+@media (min-width: 768px) { .container { max-width: 720px; } }
+@media (min-width: 992px) { .container { max-width: 960px; } }
+@media (min-width: 1200px) { .container { max-width: 1140px; } }
+
+/* Estilos para containers fluidos */
+.container-fluid {
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 15px;
+  padding-left: 15px;
+  width: 100%;
+}
+
+/* Estilos para linhas */
+.row {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin-right: -15px;
+  margin-left: -15px;
+}
+
+/* Estilos para remoção de espaçamento entre colunas */
+.no-gutters {
+  margin-right: 0;
+  margin-left: 0;
+}
+
+/* Estilos para remoção de padding entre colunas */
+.no-gutters > .col,
+.no-gutters > [class*="col-"] {
+  padding-right: 0;
+  padding-left: 0;
+}
+
+/* Define valores comuns como variáveis */
+:root {
+  --col-padding: 15px;
+}
+
+/* Estilos para todas as colunas */
+[class^="col-"] {
+  position: relative;
+  width: 100%;
+  min-height: 1px;
+  padding-right: var(--col-padding);
+  padding-left: var(--col-padding);
+}
+
+/* Estilos para col e col-auto */
+.col,
+.col-auto {
+  -ms-flex: 0 0 auto;
+  flex: 0 0 auto;
+  width: auto;
+  max-width: none;
+}
+
+/* Estilos para col-1 até col-xl-12 */
+[class^="col-"] {
+  -ms-flex-preferred-size: 0;
+  flex-basis: 0;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  max-width: 100%;
+}
+
+[class^="col-"] {
+  -ms-flex: 0 0 calc(100% / 12 * var(--size));
+  flex: 0 0 calc(100% / 12 * var(--size));
+  max-width: calc(100% / 12 * var(--size));
+}
+
+/* Estilos para ordenação */
+[class^="order-"] {
+  -ms-flex-order: var(--order);
+  order: var(--order);
+}
+
+/* Estilos específicos para cada breakpoint */
+@media (min-width: 576px) {
+}
+
+@media (min-width: 768px) {
+}
+
+@media (min-width: 992px) {
+}
+
+@media (min-width: 1200px) {
+}
+
+ /* Flex order classes */
+.order-xl-1 {
+  -ms-flex-order: 1;
+  order: 1;
+}
+/* ... (continuação das classes de order) ... */
+
+.order-xl-12 {
+  -ms-flex-order: 12;
+  order: 12;
+}
+
+/* Estilos para tabelas */
+.table {
+}
+
+/* Media queries para responsividade */
+@media (max-width: 991px) {
+  .table-responsive {
+  }
+}
+
+/* Estilos para formulários e controles */
+.form-control {
+}
+
+/* Estilos para validação */
+.invalid-feedback {
+}
+
+.invalid-tooltip {
+}
+
+/* Fechamento das regras CSS */
+}
+
+}
+
+/* Estilos para formulários inline */
+.form-inline {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-flow: row wrap;
+  flex-flow: row wrap;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+/* Estilos para botões */
+.btn {
+  display: inline-block;
+  font-weight: normal;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  border: 1px solid transparent;
+  padding: 0.5rem 0.75rem;
+  font-size: 1rem;
+  line-height: 1.25;
+  border-radius: 0.25rem;
+  transition: all 0.15s ease-in-out;
+}
+
+/* Estilos para botões primários */
+.btn-primary {
+  color: #fff;
+  background-color: #007bff;
+  border-color: #007bff;
+}
+
+/* Estilos para botões secundários */
+.btn-secondary {
+  color: #fff;
+  background-color: #868e96;
+  border-color: #868e96;
+}
+
+/* Estilos para botões de sucesso */
+.btn-success {
+  color: #fff;
+  background-color: #28a745;
+  border-color: #28a745;
+}
+
+/* Estilos para botões de aviso */
+.btn-warning {
+  color: #111;
+  background-color: #ffc107;
+  border-color: #ffc107;
+}
+
+/* Estilos para botões de perigo */
+.btn-danger {
+  color: #fff;
+  background-color: #dc3545;
+  border-color: #dc3545;
+}
+
+/* Estilos para botões de luz */
+.btn-light {
+  color: #111;
+  background-color: #f8f9fa;
+  border-color: #f8f9fa;
+}
+
+/* Estilos para botões escuros */
+.btn-dark {
+  color: #fff;
+  background-color: #343a40;
+  border-color: #343a40;
+}
+
+/* Estilos para botões com contorno */
+.btn-outline-primary {
+  color: #007bff;
+  background-color: transparent;
+  border-color: #007bff;
+}
+
+/* Estilos para botões de link */
+.btn-link {
+  font-weight: normal;
+  color: #007bff;
+  border-radius: 0;
+}
+
+/* Botões de link */
+.btn-link:active,
+.btn-link.active,
+.btn-link:disabled {
+  background-color: transparent;
+}
+
+.btn-link,
+.btn-link:focus,
+.btn-link:active {
+  border-color: transparent;
+  box-shadow: none;
+}
+
+.btn-link:hover {
+  border-color: transparent;
+}
+
+.btn-link:focus,
+.btn-link:hover {
+  color: #0056b3;
+  text-decoration: underline;
+  background-color: transparent;
+}
+
+.btn-link:disabled {
+  color: #868e96;
+}
+
+.btn-link:disabled:focus,
+.btn-link:disabled:hover {
+  text-decoration: none;
+}
+
+/* Estilos para botões de diferentes tamanhos */
+.btn-lg,
+.btn-group-lg > .btn {
+  padding: 0.5rem 1rem;
+  font-size: 1.25rem;
+  line-height: 1.5;
+  border-radius: 0.3rem;
+}
+
+.btn-sm,
+.btn-group-sm > .btn {
+  padding: 0.25rem 0.5rem;
+  font-size: 0.875rem;
+  line-height: 1.5;
+  border-radius: 0.2rem;
+}
+
+/* Botões de bloco */
+.btn-block {
+  display: block;
+  width: 100%;
+}
+
+.btn-block + .btn-block {
+  margin-top: 0.5rem;
+}
+
+input[type="submit"].btn-block,
+input[type="reset"].btn-block,
+input[type="button"].btn-block {
+  width: 100%;
+}
+
+/* Efeitos de transição */
+.fade {
+  opacity: 0;
+  transition: opacity 0.15s linear;
+}
+
+.fade.show {
+  opacity: 1;
+}
+
+/* Componentes de colapso */
+.collapse {
+  display: none;
+}
+
+.collapse.show {
+  display: block;
+}
+
+tr.collapse.show {
+  display: table-row;
+}
+
+tbody.collapse.show {
+  display: table-row-group;
+}
+
+.collapsing {
+  position: relative;
+  height: 0;
+  overflow: hidden;
+  transition: height 0.35s ease;
+}
+
+/* Dropdowns */
+.dropup,
+.dropdown {
+  position: relative;
+}
+
+.dropdown-toggle::after {
+  display: inline-block;
+  width: 0;
+  height: 0;
+  margin-left: 0.255em;
+  vertical-align: 0.255em;
+  content: "";
+  border-top: 0.3em solid;
+  border-right: 0.3em solid transparent;
+  border-left: 0.3em solid transparent;
+}
+
+.dropdown-toggle:empty::after {
+  margin-left: 0;
+}
+
+.dropup .dropdown-menu {
+  margin-top: 0;
+  margin-bottom: 0.125rem;
+}
+
+/* Estilos para o menu dropdown */
+/* Breadcrumb */
+.breadcrumb-item + .breadcrumb-item:hover::before {
+  text-decoration: none;
+}
+.breadcrumb-item.active {
+  color: #868e96;
+}
+
+/* Pagination */
+.pagination {
+  display: flex;
+  padding-left: 0;
+  list-style: none;
+  border-radius: 0.25rem;
+}
+.page-item:first-child .page-link {
+  margin-left: 0;
+  border-top-left-radius: 0.25rem;
+  border-bottom-left-radius: 0.25rem;
+}
+.page-item:last-child .page-link {
+  border-top-right-radius: 0.25rem;
+  border-bottom-right-radius: 0.25rem;
+}
+.page-item.active .page-link {
+  z-index: 2;
+  color: #fff;
+  background-color: #007bff;
+  border-color: #007bff;
+}
+.page-item.disabled .page-link {
+  color: #868e96;
+  pointer-events: none;
+  background-color: #fff;
+  border-color: #ddd;
+}
+.page-link {
+  position: relative;
+  display: block;
+  padding: 0.5rem 0.75rem;
+  margin-left: -1px;
+  line-height: 1.25;
+  color: #007bff;
+  background-color: #fff;
+  border: 1px solid #ddd;
+}
+.page-link:focus,
+.page-link:hover {
+  color: #0056b3;
+  text-decoration: none;
+  background-color: #e9ecef;
+  border-color: #ddd;
+}
+
+/* Badge */
+.badge {
+}
+
+/* Jumbotron */
+.jumbotron {
+}
+
+/* Alerts */
+.alert {
+}
+
+/* Progress */
+.progress {
+}
+
+/* Media */
+.media {
+}
+
+/* List Group */
+.list-group {
+}
+
+/* Close */
+.close {
+}
+
+/* Modal */
+.modal {
+}
+
+/* Tooltip */
+.tooltip {
+}
+
+/* Popover */
+.popover {
+}
+
+/* Estilos para botões e setas de popovers */
+.btn-link,
+.popover .arrow {
+  position: absolute;
+  display: block;
+  width: 10px;
+  height: 5px;
+}
+
+.popover .arrow::before,
+.popover .arrow::after {
+  position: absolute;
+  display: block;
+  border-color: transparent;
+  border-style: solid;
+}
+
+.popover .arrow::before,
+.popover .arrow::after {
+  content: "";
+  border-width: 11px;
+}
+
+/* Estilos para diferentes posições do popover */
+/* Posição superior */
+.popover.bs-popover-top,
+.popover.bs-popover-auto[x-placement^="top"] {
+  margin-bottom: 10px;
+}
+
+.popover.bs-popover-top .arrow,
+.popover.bs-popover-auto[x-placement^="top"] .arrow {
+  bottom: 0;
+}
+
+/* Posição superior - setas */
+.popover.bs-popover-top .arrow::before,
+.popover.bs-popover-auto[x-placement^="top"] .arrow::before {
+  bottom: -11px;
+  margin-left: -6px;
+  border-top-color: rgba(0, 0, 0, 0.25);
+}
+
+.popover.bs-popover-top .arrow::after,
+.popover.bs-popover-auto[x-placement^="top"] .arrow::after {
+  bottom: -10px;
+  margin-left: -6px;
+  border-top-color: #fff;
+}
+
+/* Mais estilos para outras posições do popover (direita, baixo, esquerda) */
+
+/* Estilos para a cabeçalho */
+.popover-header {
+}
+
+/* Corpo */
+.popover-body {
+}
+
+/* Estilos para o carrossel */
+.carousel {
+}
+
+/* Estilos do Carrossel */
+.carousel-inner {}
+.carousel-item {}
+.carousel-item.active,
+.carousel-item-next,
+.carousel-item-prev {
+  display: block;
+}
+.carousel-item-next,
+.carousel-item-prev {
+  position: absolute;
+  top: 0;
+}
+.carousel-item-next.carousel-item-left,
+.carousel-item-prev.carousel-item-right {
+  transform: translateX(0);
+}
+.carousel-item-next,
+.active.carousel-item-right {
+  transform: translateX(100%);
+}
+.carousel-item-prev,
+.active.carousel-item-left {
+  transform: translateX(-100%);
+}
+
+/* Estilos de Controle do Carrossel */
+.carousel-control-prev,
+.carousel-control-next {
+}
+.carousel-control-prev:focus,
+.carousel-control-prev:hover,
+.carousel-control-next:focus,
+.carousel-control-next:hover {
+  color: #fff;
+  text-decoration: none;
+  outline: 0;
+  opacity: 0.9;
+}
+.carousel-control-prev {
+  left: 0;
+}
+.carousel-control-next {
+  right: 0;
+}
+
+.carousel-indicators {
+}
+
+/* Classes relacionadas à impressão */
+@media print {
+  .d-print-block { display: block !important; }
+  .d-print-inline { display: inline !important; }
+  .d-print-inline-block { display: inline-block !important; }
+  .d-print-none { display: none !important; }
+}
+
+@media (min-width: 576px) {
+}
+
+@media (min-width: 768px) {
+}
+
+/* Tamanhos de tela grandes (lg) */
+@media (min-width: 992px) {
+  /* Flexbox */
+  .flex-lg-row, .flex-lg-column, .flex-lg-row-reverse, .flex-lg-column-reverse {
+    display: flex !important;
+  }
+  
+  /* Direção */
+  .flex-lg-row {
+    flex-direction: row !important;
+  }
+  .flex-lg-column {
+    flex-direction: column !important;
+  }
+  .flex-lg-row-reverse {
+    flex-direction: row-reverse !important;
+  }
+  .flex-lg-column-reverse {
+    flex-direction: column-reverse !important;
+  }
+  
+  /* Flex Wrap */
+  .flex-lg-wrap, .flex-lg-nowrap, .flex-lg-wrap-reverse {
+    flex-wrap: wrap !important;
+  }
+  .flex-lg-nowrap {
+    flex-wrap: nowrap !important;
+  }
+  .flex-lg-wrap-reverse {
+    flex-wrap: wrap-reverse !important;
+  }
+  
+  /* Justify Content */
+  .justify-content-lg-start, .justify-content-lg-end, .justify-content-lg-center,
+  .justify-content-lg-between, .justify-content-lg-around {
+    justify-content: flex-start !important;
+  }
+  .justify-content-lg-end {
+    justify-content: flex-end !important;
+  }
+  .justify-content-lg-center {
+    justify-content: center !important;
+  }
+  .justify-content-lg-between {
+    justify-content: space-between !important;
+  }
+  .justify-content-lg-around {
+    justify-content: space-around !important;
+  }
+  
+  /* Align Items */
+  .align-items-lg-start, .align-items-lg-end, .align-items-lg-center,
+  .align-items-lg-baseline, .align-items-lg-stretch {
+    align-items: flex-start !important;
+  }
+  .align-items-lg-end {
+    align-items: flex-end !important;
+  }
+  .align-items-lg-center {
+    align-items: center !important;
+  }
+  .align-items-lg-baseline {
+    align-items: baseline !important;
+  }
+  .align-items-lg-stretch {
+    align-items: stretch !important;
+  }
+}
+
+/* Tamanhos de tela extra grandes (xl) */
+@media (min-width: 1200px) {
+}
+
+/* Floats */
+.float-left, .float-right, .float-none {
+}
+
+/* Media Query para telas maiores que 768px */
+@media (min-width: 768px) {
+  /* Classes de margem */
+  .m-md-0 { margin: 0 !important; }
+  .mt-md-0 { margin-top: 0 !important; }
+  .mr-md-0 { margin-right: 0 !important; }
+
+  /* Classes de preenchimento */
+  .p-md-0 { padding: 0 !important; }
+  .pt-md-0 { padding-top: 0 !important; }
+  .pr-md-0 { padding-right: 0 !important; }
+
+  /* Classes de alinhamento de texto */
+  .text-justify { text-align: justify !important; }
+  .text-nowrap { white-space: nowrap !important; }
+}
+
+/* Media Query para telas maiores que 992px */
+@media (min-width: 992px) {
+  /* Classes de margem */
+  .m-lg-0 { margin: 0 !important; }
+  .mt-lg-0 { margin-top: 0 !important; }
+  .mr-lg-0 { margin-right: 0 !important; }
+ 
+  /* Classes de preenchimento */
+  .p-lg-0 { padding: 0 !important; }
+  .pt-lg-0 { padding-top: 0 !important; }
+  .pr-lg-0 { padding-right: 0 !important; }
+
+  /* Classes de alinhamento de texto */
+  .text-left { text-align: left !important; }
+  .text-right { text-align: right !important; }
+}
+
+/* Media Query para telas maiores que 1200px */
+@media (min-width: 1200px) {
+  /* Classes de margem */
+  .m-xl-0 { margin: 0 !important; }
+  .mt-xl-0 { margin-top: 0 !important; }
+  .mr-xl-0 { margin-right: 0 !important

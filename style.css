@@ -1,0 +1,94 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Lato", sans-serif;
+  }
+  
+  .completed-task {
+    text-decoration: line-through;
+  }
+  
+  h1 {
+    font-size: 1em;
+    text-align: left;
+    margin: 0px 0;
+    font-weight: 700;
+  }
+  
+  /* Banner da Página */
+  .full-width {
+    width: 100vw;
+    height: auto;
+    display: block;
+    max-width: 100%;
+    margin-bottom: 10px;
+  }
+  
+  /* Carousel */
+  .carousel-container {
+    position: relative;
+    max-width: 80%;
+    margin: 20px auto;
+    overflow: hidden;
+  }
+  
+  .carousel {
+    position: relative;
+  }
+  
+  .nav-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    font-size: 24px;
+    cursor: pointer;
+    z-index: 2;
+  }
+  
+  #prevBtn {
+    left: 10px;
+  }
+  
+  #nextBtn {
+    right: 10px;
+  }
+  
+  .slide-container {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+  }
+  
+  .slide {
+    min-width: 20%;
+    flex: 0 0 auto;
+  }
+  
+  .active-slide {
+    display: block;
+  }
+  
+  /* Adicionado estilo para a classe 'completed-task' */
+  .completed-task {
+    text-decoration: line-through;
+  }
+  
+  footer {
+    background-image: linear-gradient(
+      transparent,
+      rgba(255, 255, 255, 0.248),
+      #441f7c
+    );
+    color: #441f7c77;
+    padding: 0.1px;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    font-weight: 500;
+    font-weight: unset;
+    font-size: 0.7em;
+  }

@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Atividade Avaliativa - HTML, CSS e JavaScript</title>
+  <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="./fonts/lato.css">
+</head>
+
+<body>
+
+  <img src="./img/Fearless.png" alt="banner.bts" class="full-width">
+  <div class="content">
+    <div class="content-add-iten">
+      <div class="text" id="input-new-task" placeholder="Digite sua nova tarefa">
+        <div class="button">
+          <div class="content-body!">
+            <!-- lista -->
+
+            <div class="carousel-container">
+              <div class="carousel">
+                <button id="prevBtn" class="nav-btn">◄</button>
+                <div class="slide-container">
+                  <img class="slide active-slide" src="./img/1.jpg" alt="Image 1">
+                  <img class="slide" src="./img/2.jpg" alt="Image 2">
+                  <img class="slide" src="./img/3.jpg" alt="Image 3">
+                </div>
+                <button id="nextBtn" class="nav-btn">►</button>
+              </div>
+            </div>
+
+            <h1><em>QUEM É BTS?</em></h1>
+
+            <p>
+              BTS é uma boy band sul-coreana formada pela Big Hit Entertainment. Também conhecidos como Bangtan Sonyeondan, o grupo é composto por sete membros e alcançou sucesso global com sua música e performances inovadoras.
+              <em>Debutando em 2013</em>, o BTS, uma boy band sul-coreana da Big Hit Entertainment, é reconhecido globalmente por sua música inovadora e performances cativantes.
+              Composto por sete membros, o grupo estreou em 2013 e desde então se tornou um dos mais influentes na cena musical mundial.
+              Além de suas melodias envolventes, suas letras poderosas abordam temas como autoaceitação e positividade, conquistando não só fãs, mas admiradores de sua dedicação a causas sociais como caridade, educação e saúde mental.
+              O carisma no palco e coreografias impressionantes cativam multidões, enquanto sua mensagem positiva transcende a música, impactando pessoas em todo o mundo. O BTS não é apenas uma sensação musical, mas um movimento cultural que promove amor próprio, esperança e autenticidade, deixando um legado notável na indústria musical global.
+            </p>
+
+            <p>
+              O grupo é formado por 7 integrantes <strong><em>Namjoon (RM), Jin, Yoongi (SUGA), J-Hope, Jimin, Taehyung (V) e Jungkook</em></strong>.
+            </p>
+
+            <h2><strong>ALGUMAS FRASES DO BTS:</strong></h2>
+
+            <p>"Mesmo em um futuro distante, nunca esqueça o você de agora"</p>
+            <p>"Se você não pode voar, então corra. Se você não pode correr, então ande. Hoje nós sobrevivemos. Se você não pode andar, então rasteje."</p>
+            <p>"Sua presença é um presente para o mundo." - RM</p>
+
+            <div class="container rounded-3 border border-2 border-dark my-5 bg-white" style="height:auto;">
+              <div>
+                <h1 class="h1"><strong>CRONOGRAMA B-ARMY</strong></h1>
+                <div class="row justify-content-center">
+                  <div class="col-12 col-md-8">
+                    <input class="py-3 form-control shadow" placeholder="input your task" type="text" id="inputText">
+                  </div>
+                  <div class="col-2">
+                    <button onclick="addList()" class="mt-2 btn btn-dark"> Add </button>
+                  </div>
+                </div>
+              </div>
+              <hr>
+              <div class="row rounded bg-white">
+                <div class="col-12">
+                  <ul class="list-group" id="list"></ul>
+                </div>
+              </div>
+            </div>
+
+            <section>
+              <h2>ENTRE PRO NOSSO FÃ CLUBE</h2>
+              <form>
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" placeholder="Digite seu nome completo"> <br>
+
+                <label for="data">Data:</label>
+                <input type="date" id="data" name="data"> <br>
+
+                <label for="email">E-mail*:</label>
+                <input type="email" id="email" name="email" required> <br>
+
+                <label for="senha">Senha*:</label>
+                <input type="password" id="senha" name="senha" required> <br>
+
+                <label for="telefone">Telefone:</label>
+                <input type="tel" id="telefone" name="telefone"> <br>
+
+                <label for="numero">Numero:</label>
+                <input type="number" id="numero" name="numero" min="0" max="130"> <br>
+
+                <label for="marcar">Marcar</label>
+                <input type="checkbox" id="marcar" name="marcar"> <br>
+
+                <label for="texto">Texto:</label>
+                <textarea id="texto" name="texto"></textarea> <br>
+
+                <button>Enviar</button>
+              </form>
+            </section>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <p>@artquilustra todos os direitos reservados.</p>
+  </footer>
+
+  <script src="script.js"></script>
+
+</body>
+
+</html>

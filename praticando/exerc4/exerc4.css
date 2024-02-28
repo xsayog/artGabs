@@ -1,0 +1,34 @@
+* {
+  margin: 0;
+  padding: 0;
+  color: rgb(255, 255, 255);
+  font: normal 25pt arial;
+  font-style: italic;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 50px;
+  height: 100vh;
+  justify-content: center;
+  background-color: gray;
+}
+
+section {
+  width: 800px;
+  background-color: white;
+  border-radius: 15px;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.311);
+  padding: 50px ;
+  gap: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+
+section *{
+  color: black;
+}
+

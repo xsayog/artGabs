@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gestão de Transito</title>
+  <link rel="stylesheet" href="./style.css">
+  <script src="./treinoCondicoes.js" defer></script>
+</head>
+
+<body>
+
+  <header>
+    <h1>SISTEMA DE MULTAS</h1>
+  </header>
+
+  <section id="velocidade">
+    <label for="txtvel">Velocidade do carro:</label>
+    <input type="number" id="txtvel" name="txtvel" placeholder="Km/h">
+    <button onclick="calcular()">Verificar</button>
+    <div id="res"></div>
+  </section>
+
+  <section id="nacionalidade">
+    <h2>Você é brasileiro?</h2>
+    <fieldset>
+      <legend>Onde você nasceu?</legend>
+      <label for="pais">País:</label>
+      <input type="text" name="pais" id="pais" placeholder="Digite o país">
+      <button onclick="checar()">Checar</button>
+    </fieldset>
+    <div id="nas"></div>
+  </section>
+
+</body>
+
+</html>
